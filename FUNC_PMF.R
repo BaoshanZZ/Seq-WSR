@@ -87,6 +87,7 @@ output_latex_table <- function(results) {
         booktabs = TRUE, comment = FALSE)
 }
 
+# Plot PMF Function
 plot_pmf <- function(results, x_label = "Level of X", y_label = "Probability", color_label = "Odds Ratio") {
   # Convert data to long format for plotting
   probability_columns <- grep("^p_", colnames(results), value = TRUE)
